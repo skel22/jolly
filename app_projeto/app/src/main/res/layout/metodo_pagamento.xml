@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="1119dp"
+        android:layout_height="1467dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteY="-405dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="320dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="64dp"
+        android:text="Como deseja pagar?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMBWay"
+        android:layout_width="297dp"
+        android:layout_height="269dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/_c7f6495_be1b_4fc5_a9d0_70d20672a153" />
+
+    <ImageView
+        android:id="@+id/imageViewDinheiro"
+        android:layout_width="282dp"
+        android:layout_height="293dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewMBWay"
+        app:layout_constraintStart_toStartOf="@+id/imageViewMBWay"
+        app:srcCompat="@drawable/_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

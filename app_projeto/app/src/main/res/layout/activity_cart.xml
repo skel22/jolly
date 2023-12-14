@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="1119dp"
+        android:layout_height="1467dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCartItem"
+        android:layout_width="409dp"
+        android:layout_height="298dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Carrinho"
+        android:textColor="#000000"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vanilla"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewGoBack6"
+        android:layout_width="66dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:src="@drawable/seta_back"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoToPayment"
+        android:layout_width="362dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="68dp"
+        android:text="Pagar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="169dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="Total:"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewCartItem" />
+
+    <TextView
+        android:id="@+id/textViewShowTotal"
+        android:layout_width="137dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="64dp"
+        android:text="0€"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.529" />
+</androidx.constraintlayout.widget.ConstraintLayout>

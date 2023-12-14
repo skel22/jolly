@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainPage">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="1119dp"
+        android:layout_height="1467dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/sendToGelado"
+        android:layout_width="163dp"
+        android:layout_height="145dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geladinho" />
+
+    <ImageView
+        android:id="@+id/sendToCrepe"
+        android:layout_width="196dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807"
+        app:srcCompat="@drawable/crepesinho" />
+
+    <ImageView
+        android:id="@+id/sendToWaffle"
+        android:layout_width="195dp"
+        android:layout_height="189dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wafflinho" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="112dp"
+        android:background="#FFFAFAFA"
+        android:text="Gelado"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/sendToGelado"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/sendToGelado"
+        app:layout_constraintTop_toTopOf="@+id/sendToGelado" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="124dp"
+        android:background="#FFFAFAFA"
+        android:text="Waffle"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/sendToWaffle"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/sendToWaffle"
+        app:layout_constraintTop_toTopOf="@+id/sendToWaffle" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="134dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="120dp"
+        android:background="#FFFAFAFA"
+        android:text="Crepe"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/sendToCrepe"
+        app:layout_constraintStart_toStartOf="@+id/sendToCrepe"
+        app:layout_constraintTop_toTopOf="@+id/sendToCrepe" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:background="@color/vanilla"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCart5"
+        android:layout_width="69dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:src="@drawable/sem_t_tulo_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Bom dia!"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="O que vai desejar hoje?"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
