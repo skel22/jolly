@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('jolly', JolProductController::class);
+Route::get('/admin/jolly', 'App\Http\Controllers\JolProductController@welcome');
+Route::get('/admin/dashboard', 'App\Http\Controllers\JolProductController@index');
+Route::resource('jolproduct', JolProductController::class);
+Route::get('/admin/create', 'App\Http\Controllers\JolProductController@create');

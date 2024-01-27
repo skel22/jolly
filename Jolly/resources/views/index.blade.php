@@ -1,18 +1,9 @@
-@extends('jolproducts.layout')
+@extends('jolproduct.layout')
 
 @section('content')
-    @include('components.navbar') <!-- Include the custom navbar component -->
 
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Laravel 10 CRUD with Image Upload Example from scratch - ItSolutionStuff.com</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
-            </div>
-        </div>
-    </div>
+<div class="row justify-content-center mt-3">
+    <div class="col-md-12">
     
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -28,18 +19,18 @@
             <th>Details</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($products as $product)
+        @foreach ($jolProduct as $jolProduct)
         <tr>
             <td>{{ ++$i }}</td>
-            <td><img src="/images/{{ $product->image }}" width="100px"></td>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->detail }}</td>
+            <td><img src="/images/{{ $jolProduct->image }}" width="100px"></td>
+            <td>{{ $jolProduct->name }}</td>
+            <td>{{ $jolProduct->detail }}</td>
             <td>
-                <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+                <form action="{{ route('jolproduct.destroy', $jolProduct->id) }}" method="POST">
      
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('jolproduct.show', $jolProduct->id) }}">Show</a>
       
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('jolproduct.edit', $jolProduct->id) }}">Edit</a>
      
                     @csrf
                     @method('DELETE')
@@ -51,6 +42,6 @@
         @endforeach
     </table>
     
-    {!! $products->links() !!}
+    {!! $jolProduct->links() !!}
 </div>
 @endsection

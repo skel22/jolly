@@ -9,7 +9,10 @@ class JolProduct extends Model
 {
     use HasFactory;
 
+    protected $table = 'jolproducts'; 
+
     protected $fillable = [
         'name', 'price', 'image'
     ];
 }
+

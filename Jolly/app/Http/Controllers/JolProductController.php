@@ -7,15 +7,21 @@ use Illuminate\Http\Request;
 
 class JolProductController extends Controller
 {
+
+    public function welcome(Request $request)
+    {
+        return view('welcome');
+    }
+
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $jolProduct = JolProduct::latest()->paginate(5);
 
-        return view('jolproduct.index',compact('jolproduct'))
-                ->with('i', (request->input('page', 1) - 1) * 5);
+        return view('jolproduct.index', compact('jolProduct'))
+            ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
     /**
