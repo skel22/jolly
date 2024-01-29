@@ -1,4 +1,4 @@
-@extends('jolproduct.layout')
+@extends('layout')
 
 @section('content')
 
@@ -10,27 +10,31 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-     
+
+    <div class="mb-3">
+        <a href="{{ route('jolproducts.create') }}" class="btn btn-primary" style="background: linear-gradient(45deg, #FF69B4, #FF1493); color: #FFFFFF; padding: 8px 12px; padding-left: 10px; border-radius: 5px; text-decoration: none;">Create New Jol Product</a>
+    </div>
+
     <table class="table table-bordered">
         <tr>
             <th>No</th>
             <th>Image</th>
             <th>Name</th>
-            <th>Details</th>
+            <th>Price</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($jolProduct as $jolProduct)
+        @foreach ($jolproducts as $jolProduct)
         <tr>
             <td>{{ ++$i }}</td>
             <td><img src="/images/{{ $jolProduct->image }}" width="100px"></td>
             <td>{{ $jolProduct->name }}</td>
-            <td>{{ $jolProduct->detail }}</td>
+            <td>{{ $jolProduct->price }}</td>
             <td>
-                <form action="{{ route('jolproduct.destroy', $jolProduct->id) }}" method="POST">
+                <form action="{{ route('jolproducts.destroy', $jolProduct->id) }}" method="POST">
      
-                    <a class="btn btn-info" href="{{ route('jolproduct.show', $jolProduct->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('jolproducts.show', $jolProduct->id) }}">Show</a>
       
-                    <a class="btn btn-primary" href="{{ route('jolproduct.edit', $jolProduct->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('jolproducts.edit', $jolProduct->id) }}">Edit</a>
      
                     @csrf
                     @method('DELETE')
@@ -42,6 +46,6 @@
         @endforeach
     </table>
     
-    {!! $jolProduct->links() !!}
+    {!! $jolproducts->links() !!}
 </div>
 @endsection

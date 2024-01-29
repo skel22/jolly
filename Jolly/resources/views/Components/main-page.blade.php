@@ -6,17 +6,15 @@
                 <div class="flex flex-col justify-center lg:flex-row">
                     <div class="p-5 lg:w-6/12 text-center lg:text-left">
                         <h1 class="text-3xl lg:text-5xl font-semibold mt-5">
-                            Power Up Your Fitness Journey with
-                            <span class="text-red-600">BodyBoost</span>.
+                            Make your order in a quick and simple fashion, no need to wait in line!
+                            <span class="text-red-600">Jolly</span>.
                         </h1>
                         <p class="my-4 mt-8 text-lg text-justify  leading-relaxed">
-                            Experience a Body Transformation and Elevate Your Lifestyle with BodyBoost, the Ultimate
-                            Android Workout App. With Customized Training Plans, Expert Guidance, and a Diverse Range of
-                            Exercises, BodyBoost serves as your ultimate fitness companion. Its user-friendly interface
-                            and extensive features make achieving your fitness goals more accessible than ever before.
-                            Begin your transformation today by downloading BodyBoost and embark on a journey to a better
-                            version of yourself.
-                        </p>
+                            People tend to wait long minutes while in line to order a meal or a simple ice cream, that is 
+                            where Jolly comes in. Order quickly from your phone and without the need to wait in line to choose your
+                            treat, Jolly's Self Service App allows you to make your order and receive it in one of our shops through our
+                            simple and quick navigation where you can choose from our three main items and the topping that comes with it.
+                            Don't wait in line for your meal, download Jolly and get your food as soon as you step foot in our shop.
                     </div>
                     <div class="lg:w-1/3 flex justify-center items-center">
                         <img 

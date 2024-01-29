@@ -19,7 +19,7 @@
 
         .navbar {
             background-color: #F3E5AB;
-            padding: 5px;
+            padding: 15px;
         }
 
         .navbar-list {
