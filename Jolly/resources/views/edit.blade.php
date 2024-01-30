@@ -24,7 +24,7 @@
         </div>
     @endif
 
-    <form action="{{ route('jolproducts.update', $jolproduct->id) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('jolproducts.update', ['jolproduct' => $jolproduct->id]) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -39,12 +39,6 @@
                 <div class="form-group">
                     <strong>Price:</strong>
                     <input type="text" name="price" value="{{ $jolproduct->price }}" class="form-control" placeholder="Product price">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $jolproduct->detail }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

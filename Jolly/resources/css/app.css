@@ -2,3 +2,32 @@
     background-color: #ff9900; /* Set your custom background color */
     color: #ffffff; /* Set your custom text color */
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination > .active > span {
+    background-color: #FF69B4; /* Your gradient color */
+    color: #FFFFFF; /* Text color */
+    border-color: #FF69B4; /* Border color */
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > li > span,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+    color: #FF69B4; /* Text color for non-active buttons */
+}
+
+.pagination > li > a,
+.pagination > li > a:hover,
+.pagination > li > a:focus {
+    background-color: #FF69B4; /* Your gradient color */
+    color: #FFFFFF; /* Text color */
+    border-color: #FF69B4; /* Border color */
+}

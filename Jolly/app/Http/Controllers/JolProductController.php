@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\JolProduct;
 use Illuminate\Http\Request;
+use Illuminate\View\View; 
+use Illuminate\Http\RedirectResponse; 
 
 class JolProductController extends Controller
 {
@@ -13,9 +15,6 @@ class JolProductController extends Controller
         return view('welcome');
     }
 
-    /**
-     * Display a listing of the resource.
-     */
     public function index(Request $request)
 {
     $jolproducts = JolProduct::latest()->paginate(5);
@@ -25,17 +24,11 @@ class JolProductController extends Controller
 }
 
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
 {
     $request->validate([
@@ -50,38 +43,32 @@ class JolProductController extends Controller
         $destinationPath = 'imagens/';
         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
         $image->move($destinationPath, $profileImage);
-        $input['image'] = '$profileImage';
+        $input['image'] = $profileImage; // Remove single quotes here
     }
 
     JolProduct::create($input);
 
-    // Correct return statement
     return redirect()->route('jolproducts.index')
                      ->with('success', 'Product added to shop with success.');
-}
-
-
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(JolProduct $jolproduct): View
-    {
-        return view('jolproducts.show', compact('jolproduct'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
+    
+    public function show(JolProduct $jolproduct)
+    {
+        return view('show', compact('jolproduct'));
+    }
+
+
     public function edit(JolProduct $jolproduct)
     {
         return view('edit', compact('jolproduct'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, JolProduct $jolProduct): RedirectResponse
+
+
+    
+    public function update(Request $request, JolProduct $jolproduct): RedirectResponse
 {
     $request->validate([
         'name' => 'required',
@@ -94,25 +81,30 @@ class JolProductController extends Controller
         $destinationPath = 'images/';
         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
         $image->move($destinationPath, $profileImage);
-        $input['image'] = "$profileImage";
+        $input['image'] = $profileImage;
     } else {
         unset($input['image']);
     }
 
-    $jolProduct->update($input);
+    $jolproduct->update($input);
 
-    return redirect()->route('jolproducts.index')
-                    ->with('success', 'Product updated with success.');
-}
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(JolProduct $jolProduct): RedirectResponse
-{
-    $jolProduct->delete();
+    if ($jolproduct->wasChanged()) {
+        // Changes were made
+        return redirect()->route('jolproducts.index')
+                ->with('success', 'Product updated with success.');
+            } else {
+            // No changes were made
+            return redirect()->route('jolproducts.index')
+                ->with('info', 'No changes were made to the product.');
+        }
+    }
 
-    return redirect()->route('jolproducts.index')
+    public function destroy(JolProduct $jolproduct)
+    {
+        $jolproduct->delete();
+
+        return redirect()->route('jolproducts.index')
                     ->with('success', 'Product removed from shop with success.');
-}
+    }
 
 }
