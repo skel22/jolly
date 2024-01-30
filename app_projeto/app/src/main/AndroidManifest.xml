@@ -25,25 +25,25 @@
         <activity
             android:name=".view.MainPage"
             android:exported="false" />
-        <activity android:name=".GeladoPageActivity"
+        <activity android:name=".view.GeladoPageActivity"
             android:exported="false"/>
-        <activity android:name=".WafflePageActivity"
+        <activity android:name=".view.WafflePageActivity"
             android:exported="false"/>
-        <activity android:name=".GeladoItemActivity"
+        <activity android:name=".view.GeladoItemActivity"
             android:exported="false"/>
-        <activity android:name=".WaffleItemActivity"
+        <activity android:name=".view.WaffleItemActivity"
             android:exported="false"/>
-        <activity android:name=".CrepePageActivity"
+        <activity android:name=".view.CrepePageActivity"
             android:exported="false"/>
-        <activity android:name=".CrepeItemActivity"
+        <activity android:name=".view.CrepeItemActivity"
             android:exported="false"/>
-        <activity android:name=".ToppingsPageActivity"
+        <activity android:name=".view.ToppingsPageActivity"
             android:exported="false"/>
-        <activity android:name=".ToppingsItemActivity"
+        <activity android:name=".view.ToppingsItemActivity"
             android:exported="false"/>
-        <activity android:name=".CartActivity"
+        <activity android:name=".view.CartActivity"
             android:exported="false"/>
-        <activity android:name=".PagamentoActivity"
+        <activity android:name=".view.PagamentoActivity"
             android:exported="false"/>
         <activity
             android:name=".view.MainActivity"

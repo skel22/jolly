@@ -12,9 +12,11 @@ class JolProductAPIController extends Controller
 {
     public function index()
     {
-        $jolproducts = JolProduct::all();
+        $jolproducts = JolProduct::paginate(10);
         return response()->json($jolproducts);
     }
+
+
 
     public function show($id)
     {

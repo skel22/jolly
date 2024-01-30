@@ -1,4 +1,4 @@
-package pt.ipbeja.estig.twdm.pdm1.myapplication;
+package pt.ipbeja.estig.twdm.pdm1.myapplication.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.bumptech.glide.Glide;
 
+import pt.ipbeja.estig.twdm.pdm1.myapplication.R;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.model.Cart;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.viewmodel.CartViewModel;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.model.Toppings;

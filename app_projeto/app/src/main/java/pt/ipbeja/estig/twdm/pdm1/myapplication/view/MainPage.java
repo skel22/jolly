@@ -8,11 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import pt.ipbeja.estig.twdm.pdm1.myapplication.CartActivity;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.CrepePageActivity;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.GeladoPageActivity;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.R;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.WafflePageActivity;
 
 public class MainPage extends AppCompatActivity {
     ImageView imageViewGelado;

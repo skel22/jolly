@@ -1,4 +1,4 @@
-package pt.ipbeja.estig.twdm.pdm1.myapplication;
+package pt.ipbeja.estig.twdm.pdm1.myapplication.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,11 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
-
-import pt.ipbeja.estig.twdm.pdm1.myapplication.model.Waffle;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.view.MainPage;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.view.WaffleAdapter;
+import pt.ipbeja.estig.twdm.pdm1.myapplication.R;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.viewmodel.WaffleViewModel;
 
 public class WafflePageActivity extends AppCompatActivity implements WaffleAdapter.WaffleAdapterEventListener {

@@ -1,4 +1,4 @@
-package pt.ipbeja.estig.twdm.pdm1.myapplication;
+package pt.ipbeja.estig.twdm.pdm1.myapplication.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,11 +12,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import pt.ipbeja.estig.twdm.pdm1.myapplication.R;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.model.AppDatabase;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.model.Cart;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.model.CartDao;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.view.CartAdapter;
-import pt.ipbeja.estig.twdm.pdm1.myapplication.view.MainPage;
 import pt.ipbeja.estig.twdm.pdm1.myapplication.viewmodel.CartViewModel;
 
 public class CartActivity extends AppCompatActivity implements CartAdapter.OnCartItemInteractionListener {

@@ -1,4 +1,4 @@
-package pt.ipbeja.estig.twdm.pdm1.myapplication;
+package pt.ipbeja.estig.twdm.pdm1.myapplication.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import pt.ipbeja.estig.twdm.pdm1.myapplication.view.MainActivity;
+import pt.ipbeja.estig.twdm.pdm1.myapplication.R;
 
 public class PagamentoActivity extends AppCompatActivity {
     ImageView imageViewMB;

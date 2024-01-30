@@ -53,7 +53,6 @@
         <ul class="navbar-list">
             <li class="navbar-item"><a href="/admin/jolly" class="navbar-link">Home</a></li>
             <li class="navbar-item"><a href="/admin/dashboard" class="navbar-link">Products</a></li>
-            <li class="navbar-item"><a href="/admin/about_us" class="navbar-link">About Us</a></li>
         </ul>
     </nav>
 
