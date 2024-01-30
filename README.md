@@ -30,8 +30,8 @@ Java, Laravel.
 <br> </br>
 <h2> · Functionalities </h2>
 
-- Website so users can see what products are available anywhere, anytime.
-- Admin only 
+- Dashboard with CRUD operations
+- Laravel API
 
 
 <br> </br>
