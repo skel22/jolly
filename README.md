@@ -25,7 +25,7 @@ Adobe Illustrator, Android Studio, Github, MYSQL, Visual Studio.
 <br> </br>
 <h2> · Built with: </h2>
 
-Java, Laravel.
+Java, PHP, HTML & CSS.
 
 <br> </br>
 <h2> · Functionalities </h2>
